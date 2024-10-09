@@ -1,0 +1,54 @@
+/* StatsSection.css */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between the boxes */
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  height: 120px; /* Keeps the box rectangular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-content {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.stats-title {
+  font-size: 1.2em;
+  margin: 0;
+  color: #333;
+}
+
+.stats-value {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  color: #003366;
+}
+
+.stats-date {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Icon Style */
+.stats-icon {
+  width: 80px; /* Initial size of the icon */
+  height: 80px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.stat-item:hover .stats-icon {
+  transform: scale(1.2); /* Enlarge the icon */
+  width: 100px; /* Make icon bigger on hover */
+  height: 100px;
+}

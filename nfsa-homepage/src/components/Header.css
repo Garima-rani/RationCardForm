@@ -1,0 +1,102 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  height: 120px; /* Increased size for the logo */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between the logo and the text */
+}
+
+.header-title {
+  flex: 1; /* Allow title section to take up available space */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+}
+
+.header-title h1 {
+  font-size: 2em; /* Adjust size as needed */
+  margin: 0;
+  color: #003366;
+}
+
+.header-title p {
+  margin: 0;
+  color: #666666;
+  font-size: 1.2em; /* Adjust size as needed */
+  line-height: 1.4; /* Add line height for better readability */
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header-lang {
+  margin-right: 20px;
+}
+
+.lang-btn {
+  font-size: 1em;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #cccccc;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.lang-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.header-button {
+  font-size: 1em;
+  padding: 5px 15px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: #0055b3;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Place the dropdown below the button */
+  left: 0;
+  background-color: white;
+  border: 1px solid #cccccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}

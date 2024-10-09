@@ -1,0 +1,36 @@
+.navbar-container {
+  background-color: #0056b3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.navbar-icon {
+  text-align: center;
+  color: white;
+}
+
+.navbar-icon img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
